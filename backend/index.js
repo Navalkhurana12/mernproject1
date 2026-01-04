@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://job-portal-fortend.onrender.com/',
+    origin:'https://job-portal-fortend.onrender.com',
     credentials:true
 }
 
@@ -39,3 +39,4 @@ app.listen(PORT,()=>{
     console.log(`Server running at port ${PORT}`);
 
 })
+
